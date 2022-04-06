@@ -1,0 +1,15 @@
+<div class="main">
+    <button (click)="routeToAddBlog()">Add Blogs</button>
+    <select (click)="sort()" [(ngModel)] = 'sortValue'>
+        <option disabled selected>Sort By</option>
+        <option  value="a-z">A-Z</option>
+        <option  value="z-a">Z-A</option>
+    </select>
+    <div class="container">
+        <div *ngFor="let b of blogs,let i = index" class="card" (click)="viewBlog(i)">
+            <p class="blogtitle">{{b.title}}</p>
+            <p class="blogdescription">{{b.description}}</p>
+        </div>
+    </div>
+
+</div>

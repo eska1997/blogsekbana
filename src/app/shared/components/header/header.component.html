@@ -1,0 +1,8 @@
+<div class="container">
+   <p>My Blogsite </p>
+   <div class="headerRight">
+      <p>Welcome <strong>{{userStatus}}</strong></p>
+      <button *ngIf="userStatus == 'guest'" (click)=login()>LOGIN</button>
+      <button *ngIf="userStatus !== 'guest'" (click)=logout()>LOG OUT</button>
+   </div>
+</div>

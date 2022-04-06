@@ -1,0 +1,17 @@
+<div class="main">
+    <div *ngIf="this.blogs[blogNumber] !== undefined" class="card">
+        <p class="blogtitle">{{blogs[blogNumber].title}}</p>
+        <p class="blogdescription">{{blogs[blogNumber].description}}</p>
+    </div>
+    <input [(ngModel)]="blog.comment" placeholder="Write a comment">
+    <button (click)="comment()">Comment</button>
+    <button (click)="back()">Back</button>
+    <div class="alert" *ngIf="alertBox" >
+        <p>{{alertMessage}}</p>
+        <button (click)="closeAlertBox()">Close</button>
+    </div>
+    <div *ngFor = "let c of comments" class="card"> 
+        <P><strong>User</strong></P>
+        <p>{{c}}</p>
+    </div>
+</div>

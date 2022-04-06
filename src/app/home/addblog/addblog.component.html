@@ -1,0 +1,19 @@
+<div class="container-addblog">
+    <p><strong>Add Blog</strong></p>       
+    <p>Title</p>
+    <input [(ngModel)]='userData.title' placeholder="Title">
+    <p>Description</p>
+    <textarea [(ngModel)]='userData.description'></textarea>
+    <div>
+        <button class="button" (click)=addBlog()>Submit</button>
+        <button class="button" (click)=back()>Back</button>
+    </div>
+    <div class="alert" *ngIf="alertBox" >
+        <p>{{alertMessage}}</p>
+        <button (click)="closeAlertBox()">Close</button>
+    </div>
+
+</div>
+
+
+

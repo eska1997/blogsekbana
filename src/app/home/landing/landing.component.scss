@@ -1,0 +1,49 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main{
+    background-color: #f1f1f1;
+    padding:20px;
+    height:79vh;
+}
+.container{
+    width:100%;
+    margin:5px 0;
+}
+.card{
+    border:1px solid #cccbcb;
+    border-radius: 5px;
+    background-color: white;
+    padding:10px;
+    margin:10px 0;
+}
+.card:hover{
+    box-shadow: 0 5px 10px #cdcdcd;
+    border: 0;
+}
+button{
+    width:100px;
+    height:30px;
+    border-radius: 5px;
+    background-color: #c41b1b;
+    color:white;
+    font-size: 16px;
+    box-shadow: none ;
+    outline: none;
+    border: none;
+    margin-right:10px;
+}
+button:hover{
+    background-color: #880c0c;
+}
+select{
+    width:100px;
+    height: 30px;
+    border:1px solid #cccbcb;
+}
+.blogtitle{
+    font-size: 24px;
+}
+.blogdescription{
+    font-size: 12px;
+}
